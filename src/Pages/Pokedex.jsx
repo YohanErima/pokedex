@@ -15,7 +15,7 @@ function Pokedex() {
     }, [])
     return (
         <div className='container'>
-            {pokemons ? pokemons.map(pokemon => <PokemonCard key={pokemon.id} pokemon={pokemon} />) : <h1>Erreur de récupération de pokémons</h1>}
+            {pokemons ? pokemons.map(pokemon => <PokemonCard key={pokemon.id} pokemon={pokemon} />) : <h1>Loading...</h1>}
         </div>
     )
 }
